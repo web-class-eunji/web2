@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 16px;
+        }
+
+        article {
+            border: 1px solid #000;
+            margin-bottom: 16px;
+        }
+
+        .translate > div {
+            background-color: yellowgreen;
+        }
+
+        .scale > div {
+            background-color: pink;
+        }
+
+        .skew > div {
+            background-color: rgb(232, 207, 255);
+        }
+
+        .translateX {
+            transform: translateX(100%);
+        }
+
+        .translateY {
+            transform: translateY(-100px);
+        }
+
+        .translateA {
+            transform: translate(50px, -100%);
+        }
+
+        .scaleX {
+            transform: scaleX(1.5);
+        }
+
+        .scaleY {
+            transform: scaleY(0.7);
+        }
+
+        .scaleA {
+            transform: scale(0.3, 1);
+        }
+
+        .skewX {
+            transform: skewX(50deg);
+        } 
+
+        .skewY {
+            transform: skewY(150deg);
+        }
+
+        .rotate {
+            transform: rotate(45deg);
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <article class="translate">
+        <div class="translateX"></div>
+        <div class="translateY"></div>
+        <div class="translateA"></div>
+    </article>
+
+    <article class="scale">
+        <div class="scaleX"></div>
+        <div class="scaleY"></div>
+        <div class="scaleA"></div>
+    </article>
+
+    <article class="skew">
+        <div class="skewX"></div>
+        <div class="skewY"></div>
+        <div class="skewA"></div>
+    </article>
+
+    <article>
+        <div class="rotate"></div>
+    </article>
+</body>
+</html>

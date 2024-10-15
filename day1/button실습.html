@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습</title>
+    <style>
+        body {
+            background: #00002e;
+        }
+
+        ul {
+            display: flex;
+            margin: 50px 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            padding: 16px 100px;
+            border: 1px solid transparent;
+            margin-right: 16px;
+            position: relative;
+            transition: 0.4s;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0%;
+            height: 1px;
+            background-color: #9595c9;
+            transition: 0.4s;
+        }
+
+        .btn:hover::before {
+            width: 100%;
+        }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0%;
+            height: 1px;
+            background-color: #9595c9;
+            transition: 0.4s;
+        }
+
+        .btn:hover::after {
+            width: 100%;
+        }
+
+        .btn:hover {
+            border-left: 1px solid #9595c9;
+            border-right: 1px solid #9595c9;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#" class="btn">About</a>
+        </li>
+        <li>
+            <a href="#" class="btn">Contact</a>
+        </li>
+        <li>
+            <a href="#" class="btn">Mail</a>
+        </li>
+    </ul>
+</body>
+</html>
