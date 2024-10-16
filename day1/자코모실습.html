@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자코모실습</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        section {
+            display: flex;
+            width: 100%;
+        }
+
+        figure {
+            position: relative;
+            /* width: auto; */
+            height: 800px;
+            overflow: hidden;
+        }
+
+        figure > img {
+            transition: 0.7s;
+        }
+
+        figure > img:hover {
+            transform: scale(1.1);
+        }
+
+        .text_box {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translate(-50%);
+            color: #fff;
+            text-align: center;
+        }
+
+        H2 {
+            font-size: 48PX;
+            margin: 16px 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <figure>
+            <img src="./bg_materials01.jpg" alt="">
+            <div class="text_box">
+                <h2>Leather</h2>
+                <p>프리미엄 가죽</p>
+            </div>
+        </figure>
+        <figure>
+            <img src="./bg_materials02.jpg" alt="">
+            <div class="text_box">
+                <h2>Fabric</h2>
+                <p>기능성 패브릭</p>
+            </div>
+        </figure>
+        <figure>
+            <img src="./bg_materials03.jpg" alt="">
+            <div class="text_box">
+                <h2>Material</h2>
+                <p>올바른 내장재</p>
+            </div>
+        </figure>
+    </section>
+</body>
+</html>

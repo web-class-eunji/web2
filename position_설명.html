@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        section {
+            position: relative;
+        }
+        .relative {
+            border: 1px solid #000;
+            height: 500px;
+            position: relative;
+        }
+
+        .absolute {
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            position: absolute;
+        }
+
+        .absolute1 {
+            background-color: violet;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            position: absolute;
+        }
+
+        .absolute1:nth-child(2) {
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <!-- <div class="relative">
+            <div class="absolute"></div>
+        </div> -->
+        <div class="absolute1"></div>
+        <div class="absolute1"></div>
+        <div class="absolute1"></div>
+        <div class="absolute1"></div>
+        <div class="absolute1"></div>
+        <div class="absolute1"></div>
+        <div class="absolute1"></div>
+        <div class="absolute1"></div>
+        <div class="absolute1"></div>
+    </section>
+</body>
+
+</html>
