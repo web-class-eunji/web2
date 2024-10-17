@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼센테이지</title>
+    <style>
+        body {
+            background: rgb(255, 255, 184);
+        }
+
+        section {
+            width: 100%;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+           list-style: none;
+           border: 1px solid rgb(221, 219, 94);
+           margin: 16px;
+           padding: 0 16px;
+           height: 80px;
+           position: relative;
+        }
+
+        li::before {
+            content: '';
+            width: 0%;
+            height: 80px;
+            position: absolute;
+            background-color: rgb(249, 217, 217);
+            display: block;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            transition: 0.7s;
+        }
+
+        li:nth-child(1):hover::before {
+            width: 20%;
+        }
+
+        div::before {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            content: '';
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>웹부터 포트폴리오까지!</h1>
+        <ul>
+            <li>
+                <h2>
+                    20%
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    40%
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    60%
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    80%
+                </h2>
+            </li>
+            <li>
+                <h2>
+                    100%
+                </h2>
+            </li>
+        </ul>
+    </section>
+
+    <div>block</div>
+</body>
+</html>

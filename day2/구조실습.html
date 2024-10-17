@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 시맨틱 구조 실습 </title>
+    <style>
+        header {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            background-color: steelblue;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            padding: 10 30px;
+
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 16px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            padding: 16px;
+            /* border: 1px solid #000; */
+            background: rgb(34, 72, 104);
+            border-radius: 25px;
+        }
+        
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .logo {
+            font-size: 30px;
+            font-weight: 900;
+            margin-left: 16px;
+        }
+
+        /* .div_box {
+            display: flex;
+        }
+
+        .div_box > li {
+            list-style: none;
+            margin: 0 16px;
+        }
+
+        .div_box > li > a {
+            text-decoration: none;
+            color: white;
+        } */
+
+        .singing>button {
+            padding: 5px;
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            /* margin-right: 0 20px; */
+            margin: 10px;
+
+        }
+
+        .singing>button>a {
+            text-decoration: none;
+            color: dimgray;
+            padding: 16px;
+            font-size: 16px;
+            font-weight: 900;
+        }
+
+
+
+        main {
+            margin: 30px;
+        }
+
+
+
+        .chung {
+            border: 1px solid steelblue;
+            margin: 10px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: bolder;
+            margin: 10px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+
+        .aside_box {
+            width: 10%;
+        }
+
+        section {
+            font-size: 10px;
+        }
+
+        footer {
+
+            height: 100px;
+            background-color: steelblue;
+            color: white;
+            font-size: 30px;
+            font-weight: bolder;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <nav>
+            <ul>
+                <li><a href="">menu</a></li>
+                <li><a href="">menu</a></li>
+                <li><a href="">menu</a></li>
+            </ul>
+        </nav>
+            <!-- <div class="singing">
+            <button>
+                <a href=""> 메뉴</a>
+            </button>
+            <button>
+                <a href="">메뉴</a>
+            </button>
+            <button>
+                <a href="">메뉴</a>
+            </button>
+        </div> -->
+
+    </header>
+    <div class="flex">
+        <main>
+            <article class="chung">
+                <h2>충격!!!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Iste eius recusandae
+                    dolores ratione consectetur doloremque culpa dicta nobis voluptates, labore quis,
+                    tempore earum totam pariatur autem dolo
+                    rum, voluptatum animi ad?</p>
+            </article>
+            <article class="chung">
+                <h2>으아아아악</h2>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Iste eius recusandae
+                    dolores ratione consectetur doloremque culpa dicta nobis voluptates, labore quis,
+                    tempore earum totam pariatur autem dolo
+                    rum, voluptatum animi ad?</p>
+            </article>
+            <article class="chung">
+                <h2>충격!!!과 공 포</h2>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Iste eius recusandae
+                    dolores ratione consectetur doloremque culpa dicta nobis voluptates, labore quis,
+                    tempore earum totam pariatur autem dolo
+                    rum, voluptatum animi ad?</p>
+            </article>
+            <article class="chung">
+                <h2>으아아악 고통!!!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Iste eius recusandae
+                    dolores ratione consectetur doloremque culpa dicta nobis voluptates, labore quis,
+                    tempore earum totam pariatur autem dolo
+                    rum, voluptatum animi ad?</p>
+            </article>
+            <article class="chung">
+                <h2>웨취</h2>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Iste eius recusandae
+                    dolores ratione consectetur doloremque culpa dicta nobis voluptates, labore quis,
+                    tempore earum totam pariatur autem dolo
+                    rum, voluptatum animi ad?</p>
+            </article>
+            <article class="chung">
+                <h2>어머!!!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Iste eius recusandae
+                    dolores ratione consectetur doloremque culpa dicta nobis voluptates, labore quis,
+                    tempore earum totam pariatur autem dolo
+                    rum, voluptatum animi ad?</p>
+            </article>
+        </main>
+        <aside class="aside_box">
+            <h2>광고다광고</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quae consequatur dolore, laborum facere, corrupti sapient
+                e odio corporis ut modi architecto expedita, ipsam evenie
+                t provident minima assumenda quo? Harum
+                , autem numquam.</p>
+            <section>전화주세요 삐삡</section>
+        </aside>
+    </div>
+
+    <footer>여기 연락연락</footer>
+
+</body>
+
+</html>

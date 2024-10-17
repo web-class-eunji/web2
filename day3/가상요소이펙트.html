@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소이펙트</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            width: 200px;
+            display: inline-block;
+            margin: 16px;
+            font-size: 20px;
+            height: 150px;
+            text-align: center;
+        }
+
+        span {
+            display: block;
+        }   
+
+        a > span:first-child {
+            font-size: 25px;
+            font-weight: 900;
+        }
+
+        a > span:last-child {
+            color: rgb(204, 0, 0);
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        
+        a:hover span:last-child {
+            opacity: 1;
+            transform: translateY(25px);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <span>HTML</span>
+                    <span>markUp</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>CSS</span>
+                    <span>Style</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>Javascript</span>
+                    <span>coding</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>UX/UI Design</span>
+                    <span>Design</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>Portfolio</span>
+                    <span>project</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
