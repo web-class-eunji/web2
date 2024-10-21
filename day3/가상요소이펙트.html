@@ -49,6 +49,32 @@
             opacity: 1;
             transform: translateY(25px);
         }
+
+        a::before {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            display: block;
+            margin-bottom: 16px;
+            transition: 0.3s;
+            opacity: 0.5;
+        }
+
+        a:hover::before {
+            height: 5px;
+            opacity: 1;
+        }
+
+        a span:last-child::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            display: block;
+            margin-top: 30px;
+        }
+
     </style>
 </head>
 <body>
