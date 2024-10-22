@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            animation-name: boxAnimation;
+            /* 생성한 애니메이션 이름 */
+            animation-duration: 6s;
+            /* 애니메이션 지속시간 */
+            /* animation-delay: 3s; */
+            /* 브라우저 열고 대기시간 */
+            animation-iteration-count: 1;
+            /* 반복횟수
+                INFINITE : 무한반복!
+             */
+            animation-direction: normal;
+            /* 애니메이션 방향
+            reverse : 거꾸로
+             */
+            animation-fill-mode: backwards;
+            /* 전후상태
+            fowards : 원래 애니메이션은 설정한 횟수만큼 반복하고 원래 속성대로 돌아와서 끝나는데 
+            forwards 속성을 사용하면 애니메이션이 끝난 상태(to의 상태) 그대로 유지되며, 원래의 속성은 사라진다.
+
+            backwards : 애니메이션 시작할 때 스타일을 from 혹은 0%등으로 처음 시작할때 정해놓았던 애니메이션 먼저 적용된 후 애니메이션이 작동하는 효과
+            애니메이션이 끝나면 원래 박스의 속성으로 돌아온다.
+             */
+            animation-play-state: running;
+            /* 
+            재생과 정지 플레이 스테이트
+            */
+            /* animation-timing-function: linear; */
+            /* 타이밍함수 */
+        }
+        
+        .box:nth-child(1) {
+            /* animation-play-state: paused; */
+            /* paused 속성을 사용하면 정지함 */
+            animation-timing-function: ease;
+            /* ease : 빠르게 - 느리게
+            cubic-bezier
+             */
+        }
+
+        .box:nth-child(2) {
+            animation-timing-function: linear;
+            background-color: rgb(255, 231, 192);
+            /* 애니메이션이 진행되는 내내 같은 속도를 유지한다. */
+        }
+
+        .box:nth-child(3) {
+            background-color: rgb(249, 255, 192);
+            animation-timing-function: ease-in;
+            /* 아주 느리게 시작해서 애니메이션이 점차 진행되면서 속도가 빨라진다. */
+        }
+
+        .box:nth-child(4) {
+            background-color: rgb(190, 251, 195);
+            animation-timing-function: ease-out;
+            /* ease-in과 반대로 아주 빠르게 시작해서 속도가 점점 느려진다. */
+        }
+
+        .box:nth-child(5) {
+            background-color: rgb(192, 254, 255);
+            animation-timing-function: ease-in-out;
+            /* ease와 마찬가지로 속도가 빨라지나 ease보다 시작 속도가 느림 */
+        }
+
+        .box:nth-child(6) {
+            background-color: rgb(192, 199, 255);
+            animation-timing-function: cubic-bezier(1, 0.61, 0.42, 1.14);
+            /* 자신만의 값을 정의한다.
+            cubic-bezier(n1,n2,n3,n4) : 두개의 시작점과 두개의 제어점으로 이루어진 베지어 곡선을 정의하여 애니메이션의 속도를 제어한다.
+             */
+        }
+
+        @keyframes boxAnimation {
+            from {
+                width: 100px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        @keyframes boxAnimation2 {
+            10% {
+
+            }
+
+            50% {
+
+            }
+
+            100% {
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>
