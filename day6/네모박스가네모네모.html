@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animation_box {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border-radius: 24px;
+            animation: box_square 5s linear infinite;
+            /* animation: name이름 duration지속시간 timing-function타이밍함수 delay대기시간 interation-count반복횟수 direction애니메이션 방향 fill-mode 전후상태 play-state 재생/정지 */
+        }
+
+        @keyframes box_square {
+            20% {
+                transform: translate(200px);
+            }
+            60% {
+                transform: translate(200px, 200px);
+            }
+            80% {
+                transform: translate(0, 200px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation_box"></div>
+</body>
+</html>

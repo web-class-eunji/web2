@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animation_text {
+            width: max-content;
+            /* html요소의 너비를 최대한 늘리고 싶을 때 사용 */
+            /* 최대 너비는 안에 담고있는 컨텐츠의 길이에 따라 좌우된다 */
+            /* 텍스트 컨텐츠의 경우 줄바꿈을 하지 않으면 문장의 길이가 길어진다 */
+            /* 자식요소가 부모요소를 삐져나가서 콘텐츠만큼의 영역을 차지하게 됨 */
+            font-size: 100px;
+            animation: roll 15s infinite linear;
+        }
+
+        .ani2 {
+            /* animation-direction: reverse; */
+            animation: roll2 15s infinite linear;
+        }
+
+        @keyframes roll {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes roll2 {
+            0% {
+                transform: translateX(-50%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="animation_text">
+            <p>Anything is possible if you work hard Anything is possible if you work hard Anything is possible if you work hard</p>
+        </div>
+        <div class="animation_text ani2">
+            <p>Anything is possible if you work hard Anything is possible if you work hard Anything is possible if you work hard</p>
+        </div>
+    </section>
+</body>
+</html>
