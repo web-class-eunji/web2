@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애그드랍</title>
+    <style>
+        @font-face {
+            font-family: 'SF_HambakSnow';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            margin: 100px 0;
+        }
+
+        section {
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+        }
+
+        h2 {
+            position: absolute;
+            top: -50px;
+            z-index: 1;
+            font-size: 100px;
+            font-family: 'SF_HambakSnow';
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        figure img {
+            transform: translatex(-100%);
+            animation-name: img_left_show;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes img_left_show {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Egg Makes Better</h2>
+        <figure>
+            <img src="./img_better.jpg" alt="애그드랍">
+        </figure>
+        <div class="text_area">
+            <h3>일상의 수준을 높이다</h3>
+            <p>
+                현대인에게 필요한 비타민, 철분,
+                <br />
+                아미노산 등의 풍부한 영양소가 함유된
+                <br />
+                프리미엄 무 항생제 계란만 엄격하게
+                <br />
+                사용한 맛있는 스크럼블 에그로 건강한
+                <br />
+                한끼를 요리합니다.
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
