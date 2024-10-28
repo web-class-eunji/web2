@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pc_media {
+            width: 300px;
+            height: 300px;
+            background-color: teal;
+        }
+
+        @media (max-width: 1024px) {
+            /* 가장 기본적인 사용방법 */
+            /* max-width란 max-width로 설정한 값이 최대값이라는 뜻
+            즉 max-width 1024px은 1024보다 작은 화면을 뜻한다.
+            1024가 최대값이라고 선언했으니 해당 코드는 1024보다 작을 때 작동
+             */
+            .pc_media {
+                width: 100%;
+            }
+            body {
+                padding: 0 32px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            body {
+                padding: 0 16px;
+            }
+        }
+
+        .mo_media {
+            width: 100%;
+            height: 300px;
+            background-color: yellow;
+        }
+
+        @media (min-width: 360px) {
+            /* min-width는 max-width와는 반대의 개념으로 max-width가 지정한 값이 최대값이어서 브라우저의 사이즈가 작을 때 작동하는 반면에
+            min-width는 최소값을 지정해준거라서 우리가 지정한 최소값보다 클때 작동한다.
+             */
+             /* max-width / min-width 개념 중요!! */
+            .mo_media {
+                width: 100%;
+                height: 300px;
+                background: yellowgreen;
+            }
+        }
+
+        @media (min-width: 760px) {
+            .mo_media {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        .mo_pc_media {
+            width: 500px;
+            height: 500px;
+            background-color: salmon;
+        }
+
+        @media (min-width: 360px) and (max-width: 760px){
+            .mo_pc_media {
+                background-color: sandybrown;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pc_media"></div>
+
+    <div class="mo_media"></div>
+
+    <div class="mo_pc_media"></div>
+</body>
+</html>

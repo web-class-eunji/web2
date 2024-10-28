@@ -5,59 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css_slide</title>
     <style>
-        * {
+        *{
             padding: 0;
             margin: 0;
         }
 
-        button:focus 뭐가 움직여라~ {
-
+        button {
+            text-align: center;
+            margin: 50px auto;
+            display: block;
+            padding: 16px 24px;
+            font-size: 24px;
+            background: violet;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
         }
 
         ul {
-            display: flex;
             width: 1200px;
             margin: 0 auto;
+            display: flex;   
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        button:focus + ul li {
+            animation: slide 5s forwards;
+            animation-timing-function: cubic-bezier(0.93, 0.4, 0.4, 1.25);
         }
 
         li {
             list-style: none;
-            min-width:
+            min-width: 268px;
+            height: 150px;
+            margin: 0 16px;
+            animation-timing-function: linear;
         }
 
-        /* animation-timing-function: cubic-bezier(n1, n2, n3, n4); */
+        li:nth-child(1){
+            background: url(./230420-0668-1.png);
+            background-size: cover;
+        }
+        
+        li:nth-child(2){
+            background: url(./6JFTi9aSujJ6pEpSxtlBMeTLFqqJaCK-ZnIGm_KN4sbCRvjQBroun3zk7TOdn5EJnXi9gMuswTwjUcI2TGMXSw.webp);
+            background-size: cover;
+        }
+        li:nth-child(3){
+            background: url(.//71835_craw1.jpg);
+            background-size: cover;
+        }
+        li:nth-child(4){
+            background: url(./bay._.curry_thumnail.png);
+            background-size: cover;
+        }
+        li:nth-child(5){
+            background: url(./PagwakcE00JZaGpEvXym79-IMvKFBmdqOBlq778J-bvJMwz15lDLleTKc56S2wwcRcaEm3FZZ4EtniRa5bXdeQ.webp);
+            background-size: cover;
+        }
+        li:nth-child(6){
+            background: url(./6JFTi9aSujJ6pEpSxtlBMeTLFqqJaCK-ZnIGm_KN4sbCRvjQBroun3zk7TOdn5EJnXi9gMuswTwjUcI2TGMXSw.webp);
+            background-size: cover;
+        }
+        li:nth-child(7){
+            background: url(./bay._.curry_thumnail.png);
+            background-size: cover;
+        }
+        li:nth-child(8){
+            background: url(./bay._.curry_thumnail.png);
+            background-size: cover;
+        }
 
-        li:nth-child(1) {
-            background: url();
-            background-size: cover;
-        }
-        li:nth-child(2) {
-            background: url();
-            background-size: cover;
-        }
-        li:nth-child(3) {
-            background: url();
-            background-size: cover;
-        }
-        li:nth-child(4) {
-            background: url();
-            background-size: cover;
-        }
-        li:nth-child(5) {
-            background: url();
-            background-size: cover;
-        }
-        li:nth-child(6) {
-            background: url();
-            background-size: cover;
-        }
-        li:nth-child(7) {
-            background: url();
-            background-size: cover;
-        }
-        li:nth-child(8) {
-            background: url();
-            background-size: cover;
+        @keyframes slide {
+            20% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-1200px);
+            }
         }
     </style>
 </head>
