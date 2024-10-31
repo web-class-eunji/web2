@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오톡실습</title>
+    <script src="https://kit.fontawesome.com/386b64400f.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        section,
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 200px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        section>h1 {
+            font-size: 38px;
+            font-weight: normal;
+            /* width: 200px; */
+            text-align: center;
+            /* margin: 0 50px; */
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        ul>li {
+            /* margin: 16px; */
+            margin: 0 8px;
+            list-style: none;
+        }
+
+        ul>li>a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            font-weight: normal;
+            margin: 16px;
+            width: 50px;
+        }
+
+        .header1_right_box {
+            display: flex;
+            /* width: 250px; */
+            /* margin: 25px; */
+        }
+
+        figure {
+            display: flex;
+            /* padding: 10px;
+            margin: 10px; */
+        }
+
+        .header2_right_box>p:nth-child(1),
+        .header2_right_box>p:nth-child(2) {
+            border-right: 1px solid #ddd;
+        }
+
+
+        .header2_right_box {
+            display: flex;
+            padding: 16px;
+        }
+
+        .header2_right_box>p {
+            /* margin: 10px; */
+            padding: 10px;
+        }
+
+        @media (max-width: 1440px) {}
+
+        /* .mo_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            margin: 16px;
+        } */
+
+        .mo_header div:first-child {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .mo_header>section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .mo_header_bottom,
+        .mo_header_top_right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .mo_header_top_right figure:first-child {
+            margin-right: 8px;
+        }
+
+        .mo_header_top {
+            padding: 16px 150px;
+            border-bottom: 1px solid #ddd;
+
+        }
+
+        .mo_header {
+            display: none;
+        }
+
+        .mo_header_bottom {
+            width: 100%;
+            padding: 16px 0;
+            border-bottom: 1px solid #ddd;
+
+        }
+
+        .mo_header_bottom > h2,
+        .mo_header_bottom > p {
+            width: 50%;
+            text-align: center;
+        }
+
+        @media (max-width: 1440px) {
+            .mo_header {
+                /* display: flex; */
+                display: block;
+                /* justify-content: space-between; */
+            }
+
+            .pc_header {
+                display: none;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .mo_header_top {
+                padding: 16px;
+                border-bottom: 1px solid #ddd;
+            }
+            figure {
+                display: flex;
+                /* padding: 10px; */
+                /* margin: 10px; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="pc_header">
+            <section>
+                <h1>kakao</h1>
+                <ul>
+                    <li>
+                        <a href="#">
+                            소개
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            이야기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            기술과 서비스
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            약속과 책임
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            뉴스
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            투자정보
+                        </a>
+                    </li>
+                </ul>
+                <div class="header1_right_box">
+                    <figure>
+                        <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                    </figure>
+                    <figure>
+                        <i class="fa-solid fa-globe fa-2xl"></i>
+                    </figure>
+                    <figure>
+                        <i class="fa-regular fa-moon fa-2xl"></i>
+                    </figure>
+                </div>
+            </section>
+            <article>
+                <h2>카카오톡</h2>
+                <div class="header2_right_box">
+                    <p>카톡 안녕가이드</p>
+                    <p>카톡설명서</p>
+                    <p>다운로드
+                        <span>
+                            <i class="fa-solid fa-download"></i>
+                        </span>
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="mo_header">
+            <!-- <section> -->
+            <div class="mo_header_top">
+                <h1>kakao</h1>
+                <div class="mo_header_top_right">
+                    <figure>
+                        <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                    </figure>
+                    <figure>
+                        <i class="fa-solid fa-burger fa-2xl"></i>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="mo_header_bottom">
+                <h2>카카오톡</h2>
+                <p>다운로드
+                    <span>
+                        <i class="fa-solid fa-download"></i>
+                    </span>
+                </p>
+            </div>
+            <!-- </section> -->
+        </div>
+    </header>
+</body>
+
+</html>
