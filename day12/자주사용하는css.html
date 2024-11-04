@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자주 사용하는 css</title>
+    <style>
+        body {
+            margin: 0;
+            height: 10000px;
+        }
+
+        .style {
+            font-size: 사이즈 px em rem;
+            font-weight: 굵기;
+            color: 글자 색상 설정;
+            font-family: 폰트;
+            text-decoration: a태그 언더라인 없애기(생성할때도 활용 가능);
+            text-align: center left right 정렬;
+
+            /* flex 속성 */
+            display: flex 블록 요소들의 가로 정렬;
+            justify-content: flex-end, flex-start, center - 정렬
+            space- 컨텐츠들의 간격을 부모요소의 width 안에서 나눠먹도록 설정하는 기능;
+            align-items: 세로축을 기준으로 정렬;
+            flex-wrap: 요소들이 부모요소를 넘어갈때 줄바꿈 여부를 결정;
+            flex-direction: 중심축을 기본인 row에서 column으로 변경하는 속성;
+
+            /* backgroud 속성 */
+            background-color: 배경 컬러값 지정;
+            background:  컬러값을 지정해도 괜찮고,
+            url() no-repeat 이미지도 지정 가능;
+            background-size: 이미지 사이즈를 조절 px , 퍼센트 cover contain;
+            background-image: 이미지;
+            background-repeat: no-repeat;
+            background-position: 60% 이미지의 위치를 결정;
+
+            /* 영역속성 */
+            width: 가로영역지정;
+            height: 세로영역;
+            padding: 콘텐츠와 보더 사이의 간격을 지정;
+            border:  콘텐츠의 경계선 ( 콘텐츠 구성 요소 );
+            margin: 콘텐츠 이외의 여백, 요소들끼리 간격을 띄울 때 사용한다;
+            border-radius: 경계선 둥글게;
+            max-width: 요소가 가질 수 있는 최대 WIDTH값 설정한 값보다 더 늘어날 수 없다 요소의 최대 크기를 지정하는것;
+            min-width: 요소가 가지는 최소값 설정한 width값보다 줄어들수없음;
+            width: 100vw 브라우저를 기준으로 100% width를 가짐;
+            height: 100vh 브라우저를 기준으로 100% height를 가짐;
+
+            /* 위치속성 */
+            position: relative 기준이 되는 요소에 부여;
+            position: absolute 움직일 요소에 부여;
+            position: sticky 화면에 딱 고정시킴(스크롤해도 고정되어있음);
+            top: 0;
+            left: 0;
+            /* 움직일 요소에 같이 작성/ 기준으로부터 얼마나 떨어질건지를 지정 */
+            z-index: 요소들의 순서를 변경 ( 스케치북 넘기는거 생각하기 );
+
+            /* display */
+            display: block;
+            display: inline-block;
+            display: flex;
+            display: inline;
+            display: none;
+
+            /* 잡다한속성 */
+            overflow: hidden 지정한width 를 자식요소가 넘어가면 아예 안 보이게;
+            opacity: 투명도;
+            transition: 시간제어;
+
+
+            /* transform속성 */
+            transform: translate(), translateX(), translateY(), scale(), rotate(), skew();
+
+            /* animation */
+            animation: 애니메이션;
+            animation-name: 이름;
+            animation-duration: 지속시간;
+            animation-fill-mode: forwards 애니메이션 끝난 상태 유지하기;
+        }
+
+        .ex {
+            width: 300px;
+            height: 100vh;
+            background-color: blueviolet;
+            position: absolute;
+        }
+
+        .ex2 {
+            background-color: aqua;
+            z-index: -1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="style"></div>
+    <div class="ex"></div>
+    <div class="ex ex2"></div>
+</body>
+</html>
