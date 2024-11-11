@@ -8,7 +8,10 @@
 
 header,
 .header_menu,
-.main_container {
+.main_container,
+.band_function > ul,
+.recommend_text,
+.download_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +19,7 @@ header,
 
 header {
     padding: 16px;
+    background-color: #f6f8fa;
 }
 
 .header_menu > li {
@@ -28,6 +32,7 @@ header {
     border: none;
     outline: none;
     cursor: pointer;
+    background-color: #f6f8fa;
 }
 
 .lang_select:hover {
@@ -51,6 +56,7 @@ header {
 .main_container {
     background: #f6f8fa;
     justify-content: center;
+    padding-top: 100px;
 }
 
 .phone_ui {
@@ -86,6 +92,223 @@ header {
     color: #fff;
     text-decoration: none;
     display: inline-block;
-    width: 100%;
-    padding: 16PX;
+    padding: 16px;
+}
+
+.button_box > button:last-child > a {
+    color: #444;
+}
+
+.button_box > button:last-child {
+    background-color: #fff;
+    margin-top: 8px;
+}
+
+.link_text_box >  p {
+    margin: 16px 0;
+    font-size: 13px;
+}
+
+.link_text_box > p > a {
+    color: #21c531;
+}
+/* 메인 컨테이너 끝 */
+
+/* 백그라운드 이미지 컨테이너 시작 */
+.bg_img_container {
+        background: url(./bg_intro.jpg);
+        height: 540px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.bg_img_container > h2 {
+    font-size: 42px;
+    margin-bottom: 32px;
+}
+
+.bg_img_container > p {
+    line-height: 24px;
+}
+/* 백그라운드 이미지 컨테이너 끝 */
+
+/* 밴드 기능 시작 */
+.band_function > ul {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+.function_list > figure {
+    width: 300px;
+    height: 150px;
+    background-size: 300px 150px;
+}
+
+.function_img1 {
+    background: url(./band_list1.jpg);
+}
+
+.function_img2 {
+    background: url(./band_list2.jpg);
+}
+
+.function_img3 {
+    background: url(./band_list3.jpg);
+}
+
+.function_list > h2 {
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+.function_list > p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #444;
+}
+/* 밴드 기능 끝 */
+
+/* 밴드 추천 시작 */
+.band_recommend {
+    padding: 50px 0;
+    background-color: #f6f8fa;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.recommend_text > h2 {
+    font-size: 24px;
+}
+
+.recommend_text > a { 
+    text-decoration: none;
+    color: #444;
+ }
+
+.recommend_text {
+    margin-bottom: 50px;
+}
+
+.wrapper >ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recommend_list > figure {
+    background: url(./recommend.jpg);
+    width: 93px;
+    height: 93px;
+    background-size: 93px 93px;
+    border-radius: 10px;
+    margin-right: 16px;
+}
+
+.recommend_list {
+    display: flex;
+    margin: 8px 0;
+}
+
+.recommend_list_text > h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.recommend_list_text > p,
+.recommend_list_text > div > span {
+    font-size: 12px;
+    color: #444;
+    margin: 8px 0;
+}
+
+.recommend_list_text > .more {
+    padding: 4px 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    color: #444;
+}
+
+.recommend_list_text > .more > span {
+    color: #000;
+    font-weight: bold;
+}
+/* 밴드 추천 끝 */
+
+/* 다운로드 시작 */
+.download_container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.download_left > figure {
+    background: url(./spr_intro.png);
+    width: 70px;
+    height: 70px;
+    background-position: -162px 0;
+    margin-right: 16px;
+}
+
+.download_left {
+    display: flex;
+    align-items: center;
+}
+
+.download_store > a:first-child {
+    background: url(./spr_intro.png);
+    width: 160px;
+    height: 47px;
+    background-position: 0 0;
+    display: inline-block;
+}
+
+.download_store > a:last-child {
+    background: url(./spr_intro.png);
+    width: 160px;
+    height: 47px;
+    background-position: 0 -49px;
+    display: inline-block;
+}
+
+.download_text > h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.download_text > p {
+    color: #444;
+    font-size: 13px;
+}
+/* 다운로드 끝 */
+
+/* 푸터 시작 */
+footer {
+    background-color: #2A3038;
+    color: #999;
+    padding: 32px;
+}
+
+footer > ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+footer > ul > li {
+    margin: 8px 4px;
+}
+
+footer > p {
+    color: #ddd;
+    margin: 16px auto 0 auto ;
+    width: 1000px;
 }
